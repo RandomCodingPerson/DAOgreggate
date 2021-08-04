@@ -9,7 +9,7 @@ var { daos } = require('../data/daos.js');
 export default function Search({ element }) {
   return (
     <>
-      <textbox class='searchbox'/>
+      <textbox class='searchbox'/><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png' class='search'/>
     </>
   );
 }
