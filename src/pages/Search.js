@@ -1,16 +1,10 @@
 import * as React from "react"; 
-
 import '../styles/custom-classes.css'
-
 import '../styles/styles.css'
-
 import $ from 'jquery'
-
 import useSearch from '../functions/useSearch'
-
 var { daos } = require('../data/daos.js'); 
-
-export default function Search({ element }) {
+export default function Search() {
   var data = [  
    {  
       "id":"1",
@@ -43,14 +37,14 @@ export default function Search({ element }) {
 ];
   return (
     <>
-    <div class="container" style="padding:50px 250px;">
+    <div class="container" style={{"padding": `${50}}px ${250}px`}}>
       <form role="form">
             <div class="form-group">
               <input type="input" class="form-control input-lg" id="txt-search" placeholder="Type your search character"/>
             </div>
       </form>
+      <h1>hi</h1>
       <div id="filter-records">
-      
       </div>
     </div>
     {
@@ -60,7 +54,6 @@ export default function Search({ element }) {
 				$('#filter-records').html('');
 				return;
 			}
-			
             var regex = new RegExp(searchField, "i");
             var output = '<div class="row">';
             var count = 1;
