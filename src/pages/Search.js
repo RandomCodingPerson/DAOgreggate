@@ -6,7 +6,7 @@ import '../styles/styles.css'
 
 import $ from 'jquery'
 
-import useSearch from '../useSearch'
+import useSearch from '../functions/useSearch'
 
 var { daos } = require('../data/daos.js'); 
 
