@@ -36,11 +36,11 @@ class Search extends Component {
     const items = daos.filter((element)=>{
       let input = this.state.search.toLowerCase()
       if(this.state.search == null)
-          return data
+          return element
       else if(element.daoName.includes(input) || element.primaryGoal.includes(input) || element.howFunded.includes(input) || element.howVote.includes(input) || element.howToken(input) || element.techStack(input) || element.otherInterests(input)) {
-        return data
+        return element
       }
-    }).map(data=>{
+    }).map((element, index)=>{
       return(
       <div>
 
