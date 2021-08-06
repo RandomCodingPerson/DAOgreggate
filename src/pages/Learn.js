@@ -1,8 +1,8 @@
 import * as React from "react"; 
 
-import '../styles/custom-classes.css'
+import '../styles/custom-classes.scss'
 
-import '../styles/styles.css'
+import '../styles/styles.scss'
 
 var { daos } = require('../data/daos.js'); 
 

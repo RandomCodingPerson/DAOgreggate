@@ -7,6 +7,14 @@
         "version": 138,
         "index": 0
       }
+    ],
+    "src/pages/Search.js": [
+      {
+        "id": "351092dd-570f-4b28-9a83-bdbebc932764",
+        "line": 85,
+        "version": 1038,
+        "index": 2628
+      }
     ]
   }
 }

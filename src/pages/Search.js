@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-import '../styles/styles.css';
+import '../styles/styles.scss';
+import '../styles/custom-classes.scss';
 import slugify from'../functions/slugify.js';
 const { daos } = require('../data/daos.js');
 
@@ -12,6 +13,7 @@ class Search extends Component {
     this.state={
       search:null
     };
+
   }
 
   searchSpace=(event)=>{
@@ -20,19 +22,7 @@ class Search extends Component {
   }
 
   render(){
-    const styleInfo = {
-      paddingRight:'10px'
-    }
-    const elementStyle ={
-      border:'solid',
-      borderRadius:'10px',
-      position:'relative',
-      left:'10vh',
-      height:'3vh',
-      width:'20vh',
-      marginTop:'5vh',
-      marginBottom:'10vh'
-    }
+    
     const items = daos.filter((element)=>{
       let input = (this.state.search) ? (this.state.search.toLowerCase()) : ('');
 
@@ -68,7 +58,7 @@ class Search extends Component {
 
     return (
       <div>
-      <input type="text" placeholder="Enter item to be searched" style={elementStyle} onChange={(e)=>this.searchSpace(e)} />
+      <input type='text' placeholder="Enter item to be searched" onChange={(e)=>this.searchSpace(e)} className='searchBox'/>
       <ul>
         {items}
       </ul>
