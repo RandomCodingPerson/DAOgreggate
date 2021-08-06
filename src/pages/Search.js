@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../styles/styles.css';
-const { daos } = require('../data/daos.js');
 import slugify from'../functions/slugify.js';
+const { daos } = require('../data/daos.js');
 
 class Search extends Component {
 
