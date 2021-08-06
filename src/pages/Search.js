@@ -33,8 +33,8 @@ class Search extends Component {
       marginTop:'5vh',
       marginBottom:'10vh'
     }
-    const items = daos.filter((data)=>{
-      input = this.state.search.toLowerCase()
+    const items = daos.filter((element)=>{
+      let input = this.state.search.toLowerCase()
       if(this.state.search == null)
           return data
       else if(element.daoName.includes(input) || element.primaryGoal.includes(input) || element.howFunded.includes(input) || element.howVote.includes(input) || element.howToken(input) || element.techStack(input) || element.otherInterests(input)) {
