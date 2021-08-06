@@ -34,17 +34,18 @@ class Search extends Component {
       marginBottom:'10vh'
     }
     const items = daos.filter((element)=>{
-      let input = this.state.search.toLowerCase()
+      let input = (this.state.search) ? (this.state.search.toLowerCase()) : ('');
+
       if(this.state.search == null)
           return element
-      else if(element.daoName.includes(input) || element.primaryGoal.includes(input) || element.howFunded.includes(input) || element.howVote.includes(input) || element.howToken(input) || element.techStack(input) || element.otherInterests(input)) {
+      else if(element.daoName.includes(input) || element.primaryGoal.toLowerCase().includes(input) || element.howFunded.toLowerCase().includes(input) || element.howVote.toLowerCase().includes(input) || element.howToken.toLowerCase().includes(input) || element.techStack.toLowerCase().includes(input) || element.otherInterests.toLowerCase().includes(input)) {
         return element
       }
     }).map((element, index)=>{
       return(
       <div>
 
-        <li>
+        <div>
           <div className='cardRank flex'key={index}>
             <div class='cardLi'>
               <a style={{"text-decoration":"none","color":"navy"}} href={slugify(element.daoName)}> {element.daoName}</a>
@@ -59,7 +60,7 @@ class Search extends Component {
             </div>
           </div>
           &nbsp;
-        </li>
+        </div>
 
       </div>
       )
