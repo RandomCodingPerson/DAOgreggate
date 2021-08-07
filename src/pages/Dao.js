@@ -9,11 +9,11 @@ export default function Dao({ element }) {
   return (
     <>
     <div className='flexChange'>
-          <ul className='blockChange'>
-            <div className='center blockChange sidebar'>
-              <div className='button'><a href='/'>Home</a></div>&nbsp;
-              <div className='button'><a href='/add'>Add</a></div>&nbsp;
-              <div className='button'><a href='/learn'>Learn</a></div>
+          <ul className='blockChange sidebar'>
+            <div className='center blockChange'>
+              <div className='button'><a href='/'  className='btn'>Home</a></div>&nbsp;
+              <div className='button'><a href='/add'  className='btn'>Add</a></div>&nbsp;
+              <div className='button'><a href='/learn'  className='btn'>Learn</a></div>
             </div>
           </ul>
           <div>

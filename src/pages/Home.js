@@ -65,13 +65,13 @@ class Home extends Component {
         <div className='flexChange'>
           <ul className='blockChange'>
             <div class='center blockChange'>
-              <div class='button'><a href='/home'>Home</a></div>&nbsp;
-              <div className='button'><a>Add</a></div>&nbsp;
-              <div className='button'><a>Learn</a></div>
+              <div class='button'><a className='btn' href='/'>Home</a></div>&nbsp;
+              <div className='button'><a  className='btn'>Add</a></div>&nbsp;
+              <div className='button'><a  className='btn'>Learn</a></div>
             </div>
           </ul>
           <ul>
-            <div className='searchBoxWrap'><input type='text' placeholder="Enter item to be searched" onChange={(e)=>this.searchSpace(e)} className='searchBox'/></div>
+            <div className='searchBoxWrap'><input type='text' placeholder="Search through DAOs" onChange={(e)=>this.searchSpace(e)} className='searchBox'/></div>
             {items}
         </ul>
         </div>

@@ -4,7 +4,7 @@
       {
         "id": "59a960e1-6965-46ca-a2cc-c52a5a6215b4",
         "line": 1,
-        "version": 167,
+        "version": 194,
         "index": 0
       }
     ],
@@ -14,6 +14,14 @@
         "line": 70,
         "version": 1042,
         "index": 2328
+      }
+    ],
+    "src/styles/custom-classes.scss": [
+      {
+        "id": "ebb0312c-a2f2-42a6-a1d2-ab7b0dc16abe",
+        "line": 101,
+        "version": 347,
+        "index": 1256
       }
     ]
   }
