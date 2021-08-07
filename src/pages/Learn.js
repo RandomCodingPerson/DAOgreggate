@@ -6,10 +6,15 @@ import '../styles/styles.scss'
 
 var { daos } = require('../data/daos.js'); 
 
-export default function Search({ element }) {
+export default function Learn() {
   return (
     <>
-      
+      <div className='cardRank flex'key={index}>
+            <h1>Resources</h1>
+            <div class='cardLi'>
+              <a style={{"text-decoration":"none","color":"navy"}} href=""> </a>
+            </div>
+          </div>
     </>
   );
 }

@@ -12,11 +12,29 @@
   display:block;
 }
 
+.sidebar {
+  position: fixed;
+}
+
 .searchBox {
   width: 80vw;
-  border-radius: 5%;
+  border-radius: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  padding-left: 2vw;
+}
+
+.searchBoxWrap {
+  width: 80vw;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
 }
 
 .search {
@@ -66,9 +84,15 @@
 }
 
 .onethird {
-  width: 30%;
+  max-width: 30%;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.primaryGoal {
+  max-width: 78%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {

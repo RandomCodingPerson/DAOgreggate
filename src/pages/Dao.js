@@ -8,8 +8,17 @@ var { daos } = require('../data/daos.js');
 export default function Dao({ element }) {
   return (
     <>
-      <h1 className='centerText'>{element?.daoName}</h1>
-      <p className='centerText'>Primary Goal: {(element?.primaryGoal && element?.primaryGoal != '') ? (element?.primaryGoal) : ("Not Given")}</p>   
+    <div className='flexChange'>
+          <ul className='blockChange'>
+            <div className='center blockChange sidebar'>
+              <div className='button'><a href='/'>Home</a></div>&nbsp;
+              <div className='button'><a href='/add'>Add</a></div>&nbsp;
+              <div className='button'><a href='/learn'>Learn</a></div>
+            </div>
+          </ul>
+          <div>
+                <h1 className='centerText'>{element?.daoName}</h1>
+      <p className='centerText primaryGoal'>Primary Goal: {(element?.primaryGoal && element?.primaryGoal != '') ? (element?.primaryGoal) : ("Not Given")}</p>   
       <ul className='flexChange'>
         
         <div className='center onethird'>
@@ -44,6 +53,9 @@ export default function Dao({ element }) {
         </div>
 
       </ul> 
+
+          </div>
+        </div>
     </>
   );
 }
