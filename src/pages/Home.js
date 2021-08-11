@@ -36,17 +36,20 @@ class Home extends Component {
       <div>
 
         <div>
-          <div className='cardRank flex'key={index}>
+          <div className='cardRank flexChange'key={index}>
             <div class='cardLi'>
               <a style={{"text-decoration":"none","color":"navy"}} href={slugify(element.daoName)}> {element.daoName}</a>
             </div>
             <div class='logoGroup'>
-              <a class='logo'href={element.twitterLink}>
+              {element.twitterLink && <><a class='logo'href={element.twitterLink}>
                 <img class='logo'src="http://icons.iconarchive.com/icons/ampeross/smooth/512/Twitter-icon.png"/>
-              </a>
-              <a class='logo'href={element.discordLink}>
+              </a></>}
+              {element.discordLink && <><a class='logo'href={element.discordLink}>
                 <img class='logo'src="https://i.ibb.co/cv4N5PF/d-icon-1.png"/>
-              </a>
+              </a></>}
+              {element.website && <><a class='logo'href={element.website}>
+                <img class='logo'src="http://cdn.onlinewebfonts.com/svg/img_5714.png"/>
+              </a></>}
             </div>
           </div>
           &nbsp;
@@ -62,18 +65,18 @@ class Home extends Component {
         <img class="searchLogo"src="https://cdn.glitch.com/4a667589-721a-4c61-be01-3227d461b465%2FDAOgreggate%20(2).png?v=1628025352588"/>
         </div>
         <div class='rounded'>de-organizational directory</div>
-        <div className='flexChange'>
-          <ul className='blockChange'>
-            <div class='center blockChange'>
-              <div class='button'><a className='btn' href='/'>Home</a></div>&nbsp;
-              <div className='button'><a  className='btn'>Add</a></div>&nbsp;
-              <div className='button'><a  className='btn'>Learn</a></div>
+        <div className='flexChange center fit'>
+          <ul className='sidebar'>
+            <div className='center blockChange'>
+              <div className='button'><a href='/'  className='btn'>Home</a></div>&nbsp;
+              <div className='button'><a href='/add'  className='btn'>Add</a></div>&nbsp;
+              <div className='button'><a href='/learn'  className='btn'>Learn</a></div>
             </div>
           </ul>
-          <ul>
+          <div>
             <div className='searchBoxWrap'><input type='text' placeholder="Search through DAOs" onChange={(e)=>this.searchSpace(e)} className='searchBox'/></div>
             {items}
-        </ul>
+        </div>
         </div>
       </div>
     )

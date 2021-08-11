@@ -7,7 +7,15 @@ var { daos } = require('../data/daos.js');
 export default function Learn() {
   return (
     <>
-      <div className='cardRank'>
+      <div className='flexChange'>
+                      <ul className='blockChange sidebar'>
+            <div className='center blockChange'>
+              <div className='button'><a href='/'  className='btn'>Home</a></div>&nbsp;
+              <div className='button'><a href='/add'  className='btn'>Add</a></div>&nbsp;
+              <div className='button'><a href='/learn'  className='btn'>Learn</a></div>
+            </div>
+          </ul>
+          <div class='cardRank'>
             <h1>Resources</h1>
             <p>Learn about what DAOs are, how they function, and how to start your own</p>
             <div className='cardRank'>
@@ -40,6 +48,7 @@ export default function Learn() {
               </div><br/><br/>
             </div>
           </div>
+        </div>
     </>
   );
 }

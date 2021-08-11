@@ -1,11 +1,25 @@
 {
   "files": {
+    ".replit": [
+      {
+        "id": "55520b27-f684-46d3-a55b-e22da228ce47",
+        "line": 2,
+        "version": 50,
+        "index": 20
+      }
+    ],
     "src/pages/Home.js": [
       {
         "id": "59a960e1-6965-46ca-a2cc-c52a5a6215b4",
         "line": 1,
-        "version": 194,
+        "version": 380,
         "index": 0
+      },
+      {
+        "id": "5d780e45-90d8-458e-a461-026cd17a20f1",
+        "line": 72,
+        "version": 380,
+        "index": 2576
       }
     ],
     "src/pages/Search.js": [
@@ -19,9 +33,15 @@
     "src/styles/custom-classes.scss": [
       {
         "id": "ebb0312c-a2f2-42a6-a1d2-ab7b0dc16abe",
-        "line": 101,
-        "version": 347,
-        "index": 1256
+        "line": 1,
+        "version": 1831,
+        "index": 0
+      },
+      {
+        "id": "1b030cc8-de0f-414e-be80-9ffc0670a043",
+        "line": 66,
+        "version": 1831,
+        "index": 980
       }
     ]
   }
