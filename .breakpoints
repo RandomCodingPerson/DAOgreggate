@@ -12,14 +12,14 @@
       {
         "id": "59a960e1-6965-46ca-a2cc-c52a5a6215b4",
         "line": 1,
-        "version": 380,
+        "version": 451,
         "index": 0
       },
       {
         "id": "5d780e45-90d8-458e-a461-026cd17a20f1",
         "line": 72,
-        "version": 380,
-        "index": 2576
+        "version": 451,
+        "index": 2574
       }
     ],
     "src/pages/Search.js": [
@@ -34,13 +34,13 @@
       {
         "id": "ebb0312c-a2f2-42a6-a1d2-ab7b0dc16abe",
         "line": 1,
-        "version": 1891,
+        "version": 2166,
         "index": 0
       },
       {
         "id": "1b030cc8-de0f-414e-be80-9ffc0670a043",
         "line": 1,
-        "version": 1891,
+        "version": 2166,
         "index": 0
       }
     ]

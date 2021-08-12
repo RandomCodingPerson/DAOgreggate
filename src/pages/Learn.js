@@ -15,7 +15,7 @@ export default function Learn() {
               <div className='button'><a href='/learn'  className='btn'>Learn</a></div>
             </div>
           </ul>
-          <div class='cardRank'>
+          <div class='resources'>
             <h1>Resources</h1>
             <p>Learn about what DAOs are, how they function, and how to start your own</p>
             <div className='cardRank'>
