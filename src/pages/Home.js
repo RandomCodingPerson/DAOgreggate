@@ -36,7 +36,7 @@ class Home extends Component {
       <div>
 
         <div>
-          <div className='cardRank flexChange'key={index}>
+          <ul className='cardRank flexChange'key={index}>
             <div class='cardLi'>
               <a style={{"text-decoration":"none","color":"navy"}} href={slugify(element.daoName)}> {element.daoName}</a>
             </div>
@@ -51,7 +51,7 @@ class Home extends Component {
                 <img class='logo'src="http://cdn.onlinewebfonts.com/svg/img_5714.png"/>
               </a></>}
             </div>
-          </div>
+          </ul>
           &nbsp;
         </div>
 
@@ -73,7 +73,7 @@ class Home extends Component {
               <div className='button'><a href='/learn'  className='btn'>Learn</a></div>
             </div>
           </ul>
-          <div>
+          <div class='section2'>
             <div className='searchBoxWrap'><input type='text' placeholder="Search through DAOs" onChange={(e)=>this.searchSpace(e)} className='searchBox'/></div>
             {items}
         </div>

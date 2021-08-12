@@ -1,3 +1,193 @@
+* {
+  overflow: wrap;
+  margin:0px;
+  padding:0px;
+  margin-left:0px;
+  padding-left:0px;
+  padding-top:0px;
+  left:0px;
+}
+
+.blockChange {
+  display:block;
+}
+
+.flexChange {
+  display:flex;
+}
+
+.mt5vh {
+  margin-top: 5vh;
+}
+
+.sidebar {
+  margin-top: 80px;
+  width: fit-content;
+  margin-left: 1vw;
+  margin-right: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+  .flexChange {
+    display:block;
+  }
+  .sidebar {
+    margin-top: 40px;
+    width: 80vw;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+  .logoGroup {
+    margin-top: 5px;
+    margin-right: auto !important;
+    margin-left: auto !important !important;
+  }
+  .button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blockChange {
+    display:flex;
+  }
+}
+
+
+.blockChange {
+  display:block;
+}
+
+
+.searchBox {
+  width: 78vw;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #333333;
+  padding-left: 2vw;
+}
+
+
+
+.searchBoxWrap {
+  width: fit-content;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #333333;
+}
+
+
+
+
+.logo {
+  width: 25px;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+.logoGroup {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content;
+  display:flex;
+}
+
+.logo:hover {
+  padding-bottom: .8px;
+  padding-top: .5px;
+}
+
+.cardLi {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.button {
+  width: 30vw;
+  max-width: 110px;
+  background-color: #ffffe4;
+  border-radius:4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.centerText {
+  text-align:center;
+}
+
+.onethird {
+  max-width: 30%;
+  padding-left: 3%;
+  margin-top: 5vh !important;
+  margin-bottom: 5vh !important;
+  padding-right: 3%;
+}
+
+.primaryGoal {
+  max-width: 78%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+}
+
+.cardRank {
+  background-color: #ffffe4;
+  border-radius:4px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 2000px;
+  background-color: #333333;
+  color: #fffff1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left:25px;
+  padding-right: 25px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  width: fit-content;
+  max-width: 60vw;
+}
+
+@media screen and (max-width: 400px) {
+  .rounded {
+    font-size: .5rem;
+  }
+}
+
 .flexChange {
   display:flex;
 }
@@ -12,39 +202,6 @@
   display:block;
 }
 
-.sidebar {
-  margin-top: 80px;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-.searchBox {
-  width: 80vw;
-  border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  padding-left: 2vw;
-}
-
-
-
-.searchBoxWrap {
-  width: 80vw;
-  border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-}
-
-.search {
-  height: 35px;
-  background-color: aliceblue
-}
 
 @media screen and (max-width: 700px) {
   .blockChange {
@@ -52,25 +209,29 @@
   }
 }
 
-.logo {
-  width: 25px;
-  margin-left: 10%;
+.section2 {
+  margin-right: 3vw;
 }
+
+@media screen and (max-width: 700px) {
+  .section2 {
+    margin-right: 0;
+  }
+}
+
 
 .logoGroup {
   margin-left: auto;
-  margin-right: 10%;
+  margin-right: 10% !important;
   width: fit-content;
   display:flex;
 }
 
-.logo:hover {
-  padding: 2px;
-}
 
 .cardLi {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 
@@ -93,43 +254,7 @@
   padding-right: 3%;
 }
 
-.primaryGoal {
-  max-width: 78%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .center {
   margin-left:auto;
   margin-right:auto;
-}
-
-.btn {
-  color: black;
-  text-decoration: none;
-}
-
-.cardRank {
-  background-color: #ffffe4;
-  border-radius:4px;
-  padding-top: 18px;
-  padding-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80vw;
-  text-align: center;
-}
-
-.rounded {
-  border-radius: 2000px;
-  background-color: #333333;
-  color: #fffff1;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left:25px;
-  padding-right: 25px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
 }
